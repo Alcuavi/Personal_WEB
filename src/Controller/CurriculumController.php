@@ -9,18 +9,15 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Contracts\Translation\TranslatorInterface;
 
 
 class CurriculumController extends AbstractController
 {
     private $curriculumService;
-    private $translator;
 
-    public function __construct(CurriculumService $curriculumService, TranslatorInterface $translator)
+    public function __construct(CurriculumService $curriculumService)
     {
         $this->curriculumService = $curriculumService;
-        $this->translator = $translator;
     }
 
     #[Route('/{_locale}/curriculum', name: 'curriculum', requirements: ['_locale' => 'en|es'])]
@@ -33,8 +30,14 @@ class CurriculumController extends AbstractController
 
     protected function getCurriculumData(): array
     {
-        // Cargar los datos desde el archivo src/Data/curriculum_data.php
-        return include __DIR__ . '/../Data/curriculum_data.php';
+        // Define la función de traducción usando el traductor actual
+        $translator = function ($text) {
+            return $this->translator->trans($text);
+        };
+
+        // Incluir el archivo y ejecutar la función retornada
+        $dataFunction = include __DIR__ . '/../Data/curriculum_data.php';
+        return $dataFunction($translator);
     }
 
     /**

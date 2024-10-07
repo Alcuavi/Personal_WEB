@@ -14,7 +14,13 @@ class CurriculumService
     }
     public function getCurriculumData(): array
     {
-        // Cargar los datos desde el archivo src/Data/curriculum_data.php
-        return include __DIR__ . '/../Data/curriculum_data.php';
+        // Define la función de traducción usando el traductor actual
+        $translator = function ($text) {
+            return $this->translator->trans($text);
+        };
+
+        // Incluir el archivo y ejecutar la función retornada
+        $dataFunction = include __DIR__ . '/../Data/curriculum_data.php';
+        return $dataFunction($translator);
     }
 }
