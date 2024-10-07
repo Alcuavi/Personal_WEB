@@ -20,7 +20,7 @@ node_modules/
 .phpunit.xml.dist
 
 # Composer files
-composer.lock
+#composer.lock
 symfony.lock
 
 # Ignore IDE files
