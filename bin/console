@@ -17,7 +17,10 @@ if (class_exists(Dotenv::class) && file_exists(__DIR__.'/../.env')) {
     (new Dotenv())->bootEnv(__DIR__.'/../.env');
 }
 
-
+// Solo intenta cargar el archivo .env si existe
+if (class_exists(Dotenv::class) && file_exists(__DIR__ . '/../.env')) {
+    (new Dotenv())->bootEnv(__DIR__ . '/../.env');
+}
 
 require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
 
