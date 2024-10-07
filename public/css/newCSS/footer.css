@@ -1,0 +1,71 @@
+footer {
+    width: 100%;
+    height: 725px;
+    padding: 60px 0;
+    background-color: currentColor;
+    opacity: 0.5;
+}
+
+footer .footerText {
+    text-align: center;
+    color: #fff;
+}
+
+footer .footerText .titleFooter {
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+footer .footerText .titleParagraphFooter {
+    font-weight: 300;
+    color: #999999;
+    margin-bottom: 45px;
+}
+
+footer .form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+footer .form .nameContact, footer .form .nameEmail, footer .form .message {
+    display: inline-block;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background: none;
+    border: 1px solid #999999;
+    color: #999999;
+    border-radius: 3px;
+    font-family: 'lato', serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer .form .message {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+footer .form .right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .form .bottonSend {
+    display: inline-block;
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    border-radius: 3px;
+}
+
+footer .form .bottonSend:hover {
+    background: #15a4fa;
+    color: #fff;
+    cursor: pointer;
+}

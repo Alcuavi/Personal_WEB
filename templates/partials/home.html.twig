@@ -1,0 +1,17 @@
+{% block body %}
+    <section class="aboutMe">
+        <div class="containerTitleAboutMe">
+            <video id="backgroundVideoAboutMe" muted autoplay preload="auto" loop src="{{ asset('img/506401051_1%20(1).mp4') }}"></video>
+            <video id="backgroundVideo" muted autoplay preload loop src="{{ asset('img/170307_Particles_17_1080p.mp4') }}"></video>
+            <div class="containerAboutMe">
+                <div class="containerTextAboutMe">
+                    <h2 class="titleAboutMe">{{ 'COMPETENCIAS'|trans }}</h2>
+                    <p class="paragraphAboutMe">{{ 'Haz click para ver mi curriculum'|trans }}</p>
+                    <p class="paragraphAboutMe2">
+                        <a class="nav-link" href="{{ path('curriculum') }}" target="_blank">{{ 'CURRICULUM'|trans }}</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

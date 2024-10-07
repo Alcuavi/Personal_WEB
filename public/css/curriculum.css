@@ -1,0 +1,582 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    /*background-color: #ffffff;*/
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    background-size: cover;
+    /*Fondo 1*/
+    background: linear-gradient(135deg, #f0f0f0 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #f0f0f0 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #f0f0f0 25%, transparent 25%),
+    linear-gradient(45deg, #f0f0f0 25%, transparent 25%);
+    background-size: 30px 30px;
+    position: relative;
+    /*Fondo 2*/
+    /*background: radial-gradient(circle, rgb(65, 118, 180) 0%, rgb(98, 141, 69) 100%);*/
+    /*Fondo 3*/
+    /*background: linear-gradient(45deg, #e0e0e0 25%, transparent 25%),
+    linear-gradient(-45deg, #e0e0e0 25%, transparent 25%);
+    background-size: 20px 20px;
+    background-color: #ffffff;*/
+    /*Fondo 4*/
+    /*background: linear-gradient(90deg, #f0f0f0 50%, transparent 50%);
+    background-size: 40px 40px;
+    background-color: #ffffff;*/
+    /*Fondo 5*/
+    /*background: radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 50%);
+    background-size: 200px 200px;
+    background-color: #f9f9f9;*/
+    /*Fondo 6*/
+    /*background: radial-gradient(circle, #dddddd 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-color: #ffffff;*/
+    /*Fondo 7*/
+    /*background: repeating-linear-gradient(45deg, #e0e0e0, #e0e0e0 10px, #ffffff 10px, #ffffff 20px);
+    background-color: #ffffff;*/
+    /*Fondo 8*/
+    /*background: radial-gradient(circle at 70% 30%, #799b9b, #f7fafa);*/
+    /*Fondo 9*/
+    /*background: linear-gradient(135deg, #e5e5e5 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #e5e5e5 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #e5e5e5 25%, transparent 25%),
+    linear-gradient(45deg, #e5e5e5 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #f3f3f3;*/
+    /*Fondo 10*/
+    /*background: linear-gradient(54deg, #6a11cb 50%, #2575fc 50%);*/
+
+
+
+}
+
+#backgroundVideo {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999999; /* ((Queda por detras del resto)) */
+    opacity: 0.5;
+}
+
+#backgroundVideoAboutMe {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999999; /* ((Queda por detras del resto)) */
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Diseño de Columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las columnas dentro del contenedor */
+    gap: 10px;
+}
+
+.column {
+    padding: 20px;
+}
+
+.column.left {
+    width: 30%;
+    background-color: #f4f4f4;
+    border-right: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*
+    background: aliceblue;
+    opacity: 0.7;
+    border-radius: 1%;
+    border: double;
+    border-color: #15a4fa;
+    */
+}
+
+.column.right {
+    width: 50%;
+    background-color: #f4f4f4;
+    border-right: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*
+    background: aliceblue;
+    opacity: 0.7;
+    border-radius: 1%;
+    border: double;
+    border-color: #15a4fa;
+    */
+}
+
+/* Estilo de la Imagen de Perfil */
+.profile-image {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Información Personal */
+.personal-info {
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos dentro de la sección */
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+.personal-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.personal-info h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+.contact-info, .languages, .certifications, .additional-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h3, .languages h3, .certifications h3, .additional-info h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 2px solid #3498db;
+}
+
+.contact-info p, .languages ul, .certifications ul, .additional-info p {
+    margin: 5px 0;
+    text-align: center  ;
+}
+
+/* Estilo de la lista de certificaciones */
+.certifications ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las certificaciones se dispongan en varias filas si es necesario */
+}
+
+.certifications li {
+    background-color: #f4f4f4;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    width: 100%; /* Ocupa toda la columna, ajustable si es necesario */
+}
+
+.certifications i {
+    margin-right: 10px;
+    color: #3498db; /* Color del icono */
+    font-size: 1.2em;
+}
+
+.certifications span {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #34495e;
+}
+
+
+/* Estilo de la lista de idiomas */
+.languages ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.languages li {
+    margin-bottom: 10px;
+}
+
+.languages span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Estilo de la barra de progreso */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #3498db;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Estilos de la Columna Derecha */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section ul li strong {
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+.section ul li p {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+.section ul li small {
+    display: block;
+    margin-bottom: 5px;
+    color: #999;
+}
+
+/* Centrar el texto y los enlaces dentro del contenedor .social-links */
+.social-links {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-top: 10px; /* Añade un pequeño margen superior */
+}
+
+.social-links a {
+    display: inline-block; /* Asegura que los enlaces se mantengan en línea */
+    margin: 0 15px; /* Añade espacio entre los íconos */
+    color: #3498db; /* Color de los íconos */
+    font-size: 1.8em; /* Aumenta el tamaño de los íconos */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+.social-links a:hover {
+    color: #2980b9; /* Cambia el color de los íconos al pasar el ratón por encima */
+    transform: scale(1.5); /* Aumenta el tamaño al pasar el ratón por encima */
+}
+
+.social-links i {
+    vertical-align: middle; /* Alinea verticalmente los íconos */
+}
+
+/* Estilo de la sección de habilidades personales */
+.personal-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Espacio entre los íconos */
+    margin-top: 10px;
+}
+
+.skill-item {
+    flex: 1 1 calc(25% - 20px); /* Cada ícono ocupa el 25% del ancho menos el gap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio debajo de cada ícono */
+    position: relative;
+    text-align: center;
+}
+
+.personal-skills i {
+    font-size: 1.5em; /* Tamaño de los íconos */
+    color: #3498db; /* Color de los íconos */
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.personal-skills i:hover {
+    transform: scale(1.5); /* Aumenta el tamaño al pasar el ratón por encima */
+    color: #2980b9; /* Cambia el color del ícono al pasar el ratón por encima */
+}
+
+.skill-name {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posiciona el texto justo debajo del ícono */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: #3498db;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 10; /* Asegura que el texto aparezca delante de otros elementos */
+}
+
+.skill-item:hover .skill-name {
+    display: block;
+}
+
+/* Ocultar las descripciones inicialmente */
+.skill-item p {
+    display: none;
+}
+
+/* Mostrar las descripciones cuando se haga clic */
+.skill-item p.visible {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Estilo de la sección de experiencia */
+.experience-item {
+    margin-bottom: 15px;
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre la experiencia */
+    position: relative;
+}
+
+.experience-title {
+    font-weight: bold;
+    color: #34495e;
+    display: flex;
+    align-items: center;
+}
+
+.experience-item:hover .experience-title {
+    color: #2980b9; /* Cambia el color al pasar el ratón */
+}
+
+.experience-item .fa-chevron-right {
+    margin-right: 8px;
+    transition: transform 0.2s;
+}
+
+.experience-item.open .fa-chevron-right {
+    transform: rotate(90deg); /* Rota el ícono cuando la descripción esté visible */
+}
+
+.experience-description {
+    margin-top: 5px;
+    color: #7f8c8d;
+    display: none;
+}
+
+/* Estilo de la sección de formacion */
+.training-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 auto; /* Centra la lista */
+    max-width: 80%; /* Ajusta el ancho máximo de la lista para centrarla */
+}
+
+.training-item {
+    margin-bottom: 5px; /* Reduce el margen inferior entre los elementos de la lista */
+    text-align: center; /* Centra el contenido de cada elemento de la lista */
+}
+
+.training-title {
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+.training-item small {
+    display: block;
+    color: #7f8c8d;
+}
+
+/* Estilo de la sección de competencias técnicas */
+.technical-skill-category {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f4f4f4;
+    padding: 5px;  /* Reduce el padding interno */
+    border-radius: 5px;  /* Reduce el radio del borde */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);  /* Suaviza la sombra */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-width: 150px;  /* Reduce el ancho mínimo */
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px; /* Reduce el espacio entre tarjetas */
+}
+
+.technical-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;  /* Reduce el espacio entre ítems */
+}
+
+.technical-skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px; /* Reduce el margen inferior de cada ítem */
+    width: 60px;  /* Ajusta el ancho de cada ítem */
+}
+
+.technical-skill-item img {
+    width: 24px;  /* Tamaño pequeño para las imágenes */
+    height: auto;
+    margin-bottom: 3px;  /* Reduce el margen inferior de la imagen */
+}
+
+.technical-skill-item span {
+    font-size: 0.7em;  /* Reduce el tamaño del texto */
+    color: #34495e;
+    line-height: 1.2em;  /* Asegura un espaciado vertical compacto */
+}
+
+.technical-skill-category h4 {
+    font-size: 1em;  /* Reduce el tamaño del encabezado */
+    color: #2980b9;
+    margin-bottom: 5px;  /* Reduce el margen inferior */
+    margin-top: 0;
+}
+
+/* Secciones de Competencias Técnicas */
+.technical-skill-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+.technical-skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.technical-skills-left,
+.technical-skills-right {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.technical-skills-bottom {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilo de las tarjetas */
+.technical-skill-category {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Distribución de Competencias Técnicas */
+.technical-skill-category.left,
+.technical-skill-category.right {
+    width: 100%;
+}
+
+.technical-skill-category.bottom {
+    flex: 1 1 calc(33.333% - 10px);
+    margin: 5px;
+}
+
+.generate-pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.btn-download {
+    display: inline-block;
+    width: 100%;
+    max-width: 80%; /* Ajusta el porcentaje para ocupar más o menos ancho de las columnas */
+    padding: 15px;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #2980b9;
+}
+
+@media (min-width: 768px) {
+    .btn-download {
+        width: 60%; /* Ajuste para pantallas más grandes */
+    }
+}
+
+/* Estilo para el contenedor de idiomas */
+.language-switcher {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    position: absolute; /* Posiciona el contenedor de forma absoluta */
+    top: 10px; /* Ajusta la posición desde la parte superior */
+    right: 10px; /* Ajusta la posición desde la derecha */
+    display: flex; /* Muestra los elementos en línea */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+/* Estilo para los elementos de la lista de idiomas */
+.language-switcher li {
+    display: inline; /* Muestra los elementos en línea */
+}
+
+/* Estilo para los enlaces */
+.language-switcher a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #000; /* Cambia el color del texto según tu diseño */
+    font-weight: bold; /* Cambia el peso del texto */
+}
+
+.language-switcher a:hover {
+    color: #007bff; /* Color de hover para los enlaces */
+}
+
+/* Estilo para las banderas */
+.flag-icon {
+    width: 20px; /* Ajusta el tamaño de las banderas */
+    height: auto;
+    margin-right: 5px; /* Espacio entre la bandera y el texto */
+    vertical-align: middle; /* Alinea verticalmente la bandera con el texto */
+}

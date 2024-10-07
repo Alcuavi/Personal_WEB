@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Personal Website Alberto Cuadrado{% endblock %}
+
+{% block body %}
+    <img class="backgroundVideo">
+    {% include 'partials/header.html.twig' %}
+    <main>
+        {% include 'partials/home.html.twig' %}
+        {% include 'partials/about.html.twig' %}
+        {% include 'partials/projects.html.twig' %}
+    </main>
+    <footer>
+    {% include 'partials/footer.html.twig' %}
+    </footer>
+{% endblock %}

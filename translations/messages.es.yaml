@@ -1,0 +1,277 @@
+# Barra navegación
+Inicio: 'Inicio'
+Competencias: 'Competencias'
+Proyectos: 'Proyectos'
+Contacto: 'Contacto'
+
+#WEB
+'COMPETENCIAS': 'COMPETENCIAS'
+'Haz click para ver mi curriculum': 'Haz click para ver mi curriculum'
+'CURRICULUM': 'CURRICULUM'
+'PROYECTOS': 'PROYECTOS'
+'Haz de tu trabajo algo extraordinario': 'Haz de tu trabajo algo extraordinario'
+'Contáctame si estás preparado': 'Contáctame si estás preparado'
+'Contáctame': 'Contactame'
+'Evoluciona, todos necesitamos crecer y mejorar.': 'Evoluciona, todos necesitamos crecer y mejorar.'
+'Nombre': 'Nombre'
+'Correo': 'Correo'
+'Mensaje': 'Mensaje'
+'Contactar': 'Contactar'
+#Mensajes flash
+'Tu mensaje ha sido enviado correctamente.': 'Tu mensaje ha sido enviado correctamente.'
+'Hubo un problema al enviar el mensaje.': 'Hubo un problema al enviar el mensaje.'
+
+# Titulos de secciones
+#'Contacto': 'Contacto'
+'Idiomas': 'Idiomas'
+'Certificaciones': 'Certificaciones'
+'Habilidades Personales': 'Habilidades Personales'
+'Formación': 'Formación'
+'Experiencia Laboral': 'Experiencia Laboral'
+'Competencias Técnicas': 'Competencias Técnicas'
+
+# Información personal
+'ALBERTO CUADRADO': 'ALBERTO CUADRADO'
+'DESARROLLADOR FULL STACK': 'DESARROLLADOR FULL STACK'
+'Fecha de Nacimiento': 'Fecha de Nacimiento'
+'Experiencia': 'Experiencia'
+'Ubicación': 'Ubicación'
+'Torrent, Valencia': 'Torrent, Valencia'
+'Teléfono': 'Teléfono'
+'Correo electrónico': 'Correo electrónico'
+'LinkedIn': 'LinkedIn'
+'GitHub': 'GitHub'
+'Página web': 'Página web'
+
+# Curriculum Data
+'Desarrollador Full Stack con más de X años de experiencia en el desarrollo de aplicaciones web utilizando PHP y Symfony. Experto en el manejo de bases de datos MySQL y en la implementación de soluciones Ecommerce con herramientas como Prestashop y WooCommerce. Hábil en la gestión de servidores y automatización de procesos con Docker y Jenkins. Destacado en la prevención y resolución de problemas de seguridad, con un enfoque en la mejora continua y la optimización del rendimiento de las aplicaciones.':
+ 'Desarrollador Full Stack con más de X años de experiencia en el desarrollo de aplicaciones web utilizando PHP y Symfony. Experto en el manejo de bases de datos MySQL y en la implementación de soluciones Ecommerce con herramientas como Prestashop y WooCommerce. Hábil en la gestión de servidores y automatización de procesos con Docker y Jenkins. Destacado en la prevención y resolución de problemas de seguridad, con un enfoque en la mejora continua y la optimización del rendimiento de las aplicaciones.'
+
+#Idiomas
+'Español': 'Español'
+'Inglés': 'Inglés'
+'Valenciano': 'Valenciano'
+
+# Experiencia
+'BIGBUY': 'BIGBUY'
+'Full-stack Developer & IT Specialist': 'Full-stack Developer & IT Specialist'
+'Julio 2019 - Actualidad': 'Julio 2019 - Actualidad'
+'- Desarrollo de aplicaciones web robustas con PHP (Symfony), integrando bases de datos MySQL para maximizar la eficiencia y escalabilidad.':
+ '- Desarrollo de aplicaciones web robustas con PHP (Symfony), integrando bases de datos MySQL para maximizar la eficiencia y escalabilidad.'
+'- Implementación de API RESTful y servicios web utilizando Symfony y Node.js, asegurando una comunicación fluida entre el front-end y back-end.':
+ '- Implementación de API RESTful y servicios web utilizando Symfony y Node.js, asegurando una comunicación fluida entre el front-end y back-end.'
+'- Mantenimiento de sistemas Ecommerce con Prestashop, Shopify, WordPress y WooCommerce, enfocándome en la optimización del rendimiento y la seguridad.':
+ '- Mantenimiento de sistemas Ecommerce con Prestashop, Shopify, WordPress y WooCommerce, enfocándome en la optimización del rendimiento y la seguridad.'
+'- Administración de servidores Linux y entornos Docker para desarrollo y producción.':
+ '- Administración de servidores Linux y entornos Docker para desarrollo y producción.'
+'- Automatización de procesos con Jenkins y GitLab CI, mejorando la eficiencia del ciclo de desarrollo.':
+ '- Automatización de procesos con Jenkins y GitLab CI, mejorando la eficiencia del ciclo de desarrollo.'
+'- Gestión del control de versiones con Git, facilitando la colaboración y el seguimiento de cambios.':
+ '- Gestión del control de versiones con Git, facilitando la colaboración y el seguimiento de cambios.'
+'- Implementación de metodologías ágiles (SCRUM) y gestión de proyectos a través de Jira y Confluence, optimizando la coordinación y comunicación dentro de equipos multidisciplinarios.':
+ '- Implementación de metodologías ágiles (SCRUM) y gestión de proyectos a través de Jira y Confluence, optimizando la coordinación y comunicación dentro de equipos multidisciplinarios.'
+
+'GIMNASIO DEPORTIVO HERCA': 'GIMNASIO DEPORTIVO HERCA'
+'Entrenador de Natación, Matronatación y Natación Terapéutica': 'Entrenador de Natación, Matronatación y Natación Terapéutica'
+'Octubre 2018 - Mayo 2019': 'Octubre 2018 - Mayo 2019'
+'- Entrenamiento de natación enfocado en mejorar la técnica y condición física de los usuarios.':
+ '- Entrenamiento de natación enfocado en mejorar la técnica y condición física de los usuarios.'
+'- Diseño de programas personalizados para natación terapéutica y matronatación.':
+ '- Diseño de programas personalizados para natación terapéutica y matronatación.'
+
+'THE BARRA FEST': 'THE BARRA FEST'
+'Founder, CEO, CTO, CFO y COO': 'Founder, CEO, CTO, CFO y COO'
+'Mayo 2018 - Mayo 2019': 'Mayo 2018 - Mayo 2019'
+'- Gestión integral de la empresa de catering, desde la estrategia financiera y operativa hasta la implementación tecnológica.':
+ '- Gestión integral de la empresa de catering, desde la estrategia financiera y operativa hasta la implementación tecnológica.'
+'- Supervisión de la logística y el servicio de catering, asegurando calidad en cada evento.':
+ '- Supervisión de la logística y el servicio de catering, asegurando calidad en cada evento.'
+'- Fomento de relaciones comerciales, expandiendo la presencia en el mercado de eventos.':
+ '- Fomento de relaciones comerciales, expandiendo la presencia en el mercado de eventos.'
+
+'SNAPS STUDIO': 'SNAPS STUDIO'
+'Fotógrafo Inmobiliario, Realidad Virtual y Fotografía 360º': 'Fotógrafo Inmobiliario, Realidad Virtual y Fotografía 360º'
+'Octubre 2016 - Enero 2018': 'Octubre 2016 - Enero 2018'
+'- Especialización en fotografía inmobiliaria y desarrollo de experiencias inmersivas mediante realidad virtual y fotografía 360º.':
+ '- Especialización en fotografía inmobiliaria y desarrollo de experiencias inmersivas mediante realidad virtual y fotografía 360º.'
+'- Colaboración con agentes inmobiliarios para mejorar la presentación visual de propiedades, incrementando el interés de los compradores.':
+ '- Colaboración con agentes inmobiliarios para mejorar la presentación visual de propiedades, incrementando el interés de los compradores.'
+
+'InmoNostrum SC': 'InmoNostrum SC'
+'Co-Founder, CEO, CTO, CFO y COO': 'Co-Founder, CEO, CTO, CFO y COO'
+'Septiembre 2016 - Diciembre 2017': 'Septiembre 2016 - Diciembre 2017'
+'- Gestión integral de la empresa con un enfoque en asesoría inmobiliaria, fotografía profesional y marketing online.':
+ '- Gestión integral de la empresa con un enfoque en asesoría inmobiliaria, fotografía profesional y marketing online.'
+'- Desarrollo de estrategias de marketing digital que mejoraron la captación de clientes y aumentaron las ventas.':
+ '- Desarrollo de estrategias de marketing digital que mejoraron la captación de clientes y aumentaron las ventas.'
+
+'OVENETWORK SL (CHOLLOX)': 'OVENETWORK SL (CHOLLOX)'
+'CMO, CCO, CFO': 'CMO, CCO, CFO'
+'Marzo 2015 - Julio 2017': 'Marzo 2015 - Julio 2017'
+'Responsable de marketing, comunicación y finanzas en la plataforma de comercio electrónico Chollox, implementando estrategias que aumentaron el tráfico y las conversiones.':
+ 'Responsable de marketing, comunicación y finanzas en la plataforma de comercio electrónico Chollox, implementando estrategias que aumentaron el tráfico y las conversiones.'
+
+'LA UNIVERSIDAD CB': 'LA UNIVERSIDAD CB'
+'Camarero y Pinche de Cocina': 'Camarero y Pinche de Cocina'
+'Septiembre 2012 - Mayo 2017': 'Septiembre 2012 - Mayo 2017'
+'Trabajo en un negocio familiar, desempeñando funciones de servicio al cliente y apoyo en cocina durante eventos y servicios diarios.':
+ 'Trabajo en un negocio familiar, desempeñando funciones de servicio al cliente y apoyo en cocina durante eventos y servicios diarios.'
+
+'VILAPLANA CATERING': 'VILAPLANA CATERING'
+'Camarero y Montador de Eventos': 'Camarero y Montador de Eventos'
+'Abril 2016 - Enero 2017': 'Abril 2016 - Enero 2017'
+'Organización y servicio en eventos de catering de alta gama, asegurando un alto nivel de satisfacción del cliente.':
+ 'Organización y servicio en eventos de catering de alta gama, asegurando un alto nivel de satisfacción del cliente.'
+
+'CLUB DE TENIS VILLACARMEN': 'CLUB DE TENIS VILLACARMEN'
+'Monitor de Tenis y Pádel, Preparador Físico y Encordador de Raquetas': 'Monitor de Tenis y Pádel, Preparador Físico y Encordador de Raquetas'
+'Junio 2009 - Diciembre 2016': 'Junio 2009 - Diciembre 2016'
+'Entrenamiento de tenis y pádel, enfocado en el desarrollo de habilidades técnicas y físicas en jugadores de todas las edades.':
+ 'Entrenamiento de tenis y pádel, enfocado en el desarrollo de habilidades técnicas y físicas en jugadores de todas las edades.'
+
+'GOURMET CATERING & ESPACIOS': 'GOURMET CATERING & ESPACIOS'
+#'Camarero y Montador de Eventos': 'Camarero y Montador de Eventos'
+'Abril 2016 - Septiembre 2016': 'Abril 2016 - Septiembre 2016'
+'Trabajo en montaje y servicio de eventos para la empresa Gourmet Catering.':
+ 'Trabajo en montaje y servicio de eventos para la empresa Gourmet Catering.'
+
+'DECATHLON ESPAÑA': 'DECATHLON ESPAÑA'
+'Vendedor, Organizador de Eventos y Encordador de Raquetas': 'Vendedor, Organizador de Eventos y Encordador de Raquetas'
+'Febrero 2015 - Julio 2015': 'Febrero 2015 - Julio 2015'
+'Venta de productos deportivos, organización de eventos promocionales y encordado de raquetas, mejorando la experiencia de los clientes.':
+ 'Venta de productos deportivos, organización de eventos promocionales y encordado de raquetas, mejorando la experiencia de los clientes.'
+
+'LEVANTE U.D.': 'LEVANTE U.D.'
+'Entrenador/Ojeador de Porteros': 'Entrenador/Ojeador de Porteros'
+'Julio 2011 - Diciembre 2012': 'Julio 2011 - Diciembre 2012'
+'Entrenamiento especializado de porteros y evaluación de talentos para el equipo juvenil.':
+ 'Entrenamiento especializado de porteros y evaluación de talentos para el equipo juvenil.'
+
+'C.D. MONTE-SIÓN': 'C.D. MONTE-SIÓN'
+'1er Entrenador, Entrenador de Porteros y Preparador Físico': '1er Entrenador, Entrenador de Porteros y Preparador Físico'
+'Septiembre 2009 - Junio 2011': 'Septiembre 2009 - Junio 2011'
+'Desarrollo integral de equipos de fútbol juvenil, con un enfoque en la mejora técnica de los porteros y la preparación física del equipo.':
+ 'Desarrollo integral de equipos de fútbol juvenil, con un enfoque en la mejora técnica de los porteros y la preparación física del equipo.'
+
+# Educación
+'Universidad Nacional de Educación a Distancia (EN CURSO)': 'Universidad Nacional de Educación a Distancia (EN CURSO)'
+'GRADO EN INGENIERIA INFORMATICA': 'GRADO EN INGENIERIA INFORMATICA'
+'Geekshubs Academy': 'Geekshubs Academy'
+'BOOTCAMP FULL STACK WEB DEVELOPER': 'BOOTCAMP FULL STACK WEB DEVELOPER'
+'Universidad Católica de Valencia': 'Universidad Católica de Valencia'
+'GRADO EN CIENCIAS DE LA ACTIVIDAD FISICA Y DEL DEPORTE': 'GRADO EN CIENCIAS DE LA ACTIVIDAD FISICA Y DEL DEPORTE'
+'GRADO EN FISIOTERAPIA (120 ECTS)': 'GRADO EN FISIOTERAPIA (120 ECTS)'
+'TAME': 'TAME'
+'PROGRAMADOR DE APLICACIONES INFORMATICAS': 'PROGRAMADOR DE APLICACIONES INFORMATICAS'
+'DISEÑADOR WEB Y DE REDES': 'DISEÑADOR WEB Y DE REDES'
+
+# Certificaciones
+'PHP & Symfony Developer Certification - SymfonyCasts': 'PHP & Symfony Developer Certification - SymfonyCasts'
+'Linux Server Administration Certification - Linux Professional Institute (LPI)': 'Linux Server Administration Certification - Linux Professional Institute (LPI)'
+'RESTful API Development with Symfony Certification - Udemy': 'RESTful API Development with Symfony Certification - Udemy'
+'DevOps and Docker Certification - Udemy': 'DevOps and Docker Certification - Udemy'
+'Web Security and Ethical Hacking Certification - eLearnSecurity': 'Web Security and Ethical Hacking Certification - eLearnSecurity'
+'Nivel B1 de Inglés': 'Nivel B1 de Inglés'
+'Nivel C1 de Valenciano': 'Nivel C1 de Valenciano'
+'Entrenador Europeo RPT (Registro Profesional de Tenis)': 'Entrenador Europeo RPT (Registro Profesional de Tenis)'
+'Google Street View (Fotógrafo de confianza de Google)': 'Google Street View (Fotógrafo de confianza de Google)'
+
+# Habilidades técnicas
+'Backend': 'Backend'
+'PHP': 'PHP'
+'Symfony': 'Symfony'
+'Laravel': 'Laravel'
+'Node.js': 'Node.js'
+'Express': 'Express'
+'RESTful APIs': 'RESTful APIs'
+'JSON': 'JSON'
+'XML': 'XML'
+'JWT': 'JWT'
+'OAuth2': 'OAuth2'
+'Frontend': 'Frontend'
+'HTML5': 'HTML5'
+'CSS3': 'CSS3'
+'JavaScript': 'JavaScript'
+'TypeScript': 'TypeScript'
+'Bootstrap': 'Bootstrap'
+'React': 'React'
+'SASS': 'SASS'
+'LESS': 'LESS'
+'Bases de Datos': 'Bases de Datos'
+'MySQL': 'MySQL'
+'SQL Server': 'SQL Server'
+'MongoDB': 'MongoDB'
+'MariaDB': 'MariaDB'
+'Doctrine ORM': 'Doctrine ORM'
+'Redis': 'Redis'
+'DevOps': 'DevOps'
+'Docker': 'Docker'
+'Jenkins': 'Jenkins'
+'GitLab CI/CD': 'GitLab CI/CD'
+'Kubernetes': 'Kubernetes'
+'Nginx': 'Nginx'
+'Apache': 'Apache'
+'Google Cloud Platform': 'Google Cloud Platform'
+'AWS': 'AWS'
+'Ansible': 'Ansible'
+'RabbitMQ': 'RabbitMQ'
+'Testing': 'Testing'
+'PHPUnit': 'PHPUnit'
+'Behat': 'Behat'
+'Selenium': 'Selenium'
+'Jasmine': 'Jasmine'
+'Cypress': 'Cypress'
+'Seguridad': 'Seguridad'
+'OWASP': 'OWASP'
+'SSL/TLS': 'SSL/TLS'
+'Firewalls': 'Firewalls'
+'SAST': 'SAST'
+'DAST': 'DAST'
+'SQL Injection': 'SQL Injection'
+'XSS': 'XSS'
+'CSRF': 'CSRF'
+'Control de Versiones': 'Control de Versiones'
+'Git': 'Git'
+#'GitHub': 'GitHub'
+'GitLab': 'GitLab'
+'Bitbucket': 'Bitbucket'
+'Metodologías': 'Metodologías'
+'AGILE': 'AGILE'
+'SCRUM': 'SCRUM'
+'Jira': 'Jira'
+'Confluence': 'Confluence'
+
+# Habilidades personales
+'Resolución de problemas': 'Resolución de problemas'
+'Capacidad para identificar y solucionar problemas complejos en sistemas web y aplicaciones.':
+ 'Capacidad para identificar y solucionar problemas complejos en sistemas web y aplicaciones.'
+'Creatividad': 'Creatividad'
+'Innovación constante en el diseño y desarrollo de soluciones tecnológicas.':
+ 'Innovación constante en el diseño y desarrollo de soluciones tecnológicas.'
+'Trabajo en equipo': 'Trabajo en equipo'
+'Colaboración efectiva con equipos multidisciplinarios para alcanzar objetivos comunes.':
+ 'Colaboración efectiva con equipos multidisciplinarios para alcanzar objetivos comunes.'
+'Gestión del tiempo': 'Gestión del tiempo'
+'Excelente manejo del tiempo, priorizando tareas para cumplir con los plazos.':
+ 'Excelente manejo del tiempo, priorizando tareas para cumplir con los plazos.'
+'Liderazgo': 'Liderazgo'
+'Experiencia en liderar proyectos y equipos, asegurando el éxito y la calidad del trabajo entregado.':
+ 'Experiencia en liderar proyectos y equipos, asegurando el éxito y la calidad del trabajo entregado.'
+'Adaptabilidad': 'Adaptabilidad'
+'Capacidad para adaptarse rápidamente a nuevas tecnologías y entornos de trabajo.':
+ 'Capacidad para adaptarse rápidamente a nuevas tecnologías y entornos de trabajo.'
+'Pensamiento crítico': 'Pensamiento crítico'
+'Evaluación rigurosa de sistemas y procesos para mejorar la eficiencia y seguridad.':
+ 'Evaluación rigurosa de sistemas y procesos para mejorar la eficiencia y seguridad.'
+'Comunicación efectiva': 'Comunicación efectiva'
+'Habilidades para comunicar ideas y soluciones técnicas de manera clara y comprensible.':
+ 'Habilidades para comunicar ideas y soluciones técnicas de manera clara y comprensible.'
+
+# Formulario de contacto
+#'Nombre': 'Nombre'
+#'Mensaje': 'Mensaje'
+#'Correo electrónico': 'Correo electrónico'
+'Enviar': 'Enviar'
+
+# Footer
+'Todos los derechos reservados': 'Todos los derechos reservados'

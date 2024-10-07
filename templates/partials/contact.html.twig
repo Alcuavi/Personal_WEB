@@ -1,0 +1,17 @@
+
+    {{ form_start(contactForm, { 'attr': { 'id': 'contact-form', 'action': path('contact'), 'method': 'post', 'class': 'form' } }) }}
+    {{ form_widget(contactForm.name) }}
+    {{ form_widget(contactForm.email) }}
+    {{ form_widget(contactForm.message) }}
+    <div class="right">
+    {{ form_widget(contactForm.send) }}
+    </div>
+    {{ form_end(contactForm) }}
+
+        {% for label, messages in app.flashes %}
+            <div class="flash-{{ label }}">
+                {% for message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endfor %}

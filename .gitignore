@@ -1,20 +1,41 @@
+# Node modules
+node_modules/
 
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
+# Symfony directories
 /var/
 /vendor/
-###< symfony/framework-bundle ###
+/bin/
 
-###> phpunit/phpunit ###
-/phpunit.xml
-.phpunit.result.cache
-###< phpunit/phpunit ###
+# Symfony logs and cache
+/var/log/
+/var/cache/
 
-###> symfony/phpunit-bridge ###
+# Configuration files that contain sensitive information
+.env
+.env.*.local
+
+# Development and testing files
 .phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
+.phpunit.xml
+.phpunit.xml.dist
+
+# Composer files
+composer.lock
+symfony.lock
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Build artifacts
+/public/build/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Ignore npm package files
+package-lock.json
+
+# Ignorar migraciones (opcional, si son generadas automáticamente)
+migrations/

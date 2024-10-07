@@ -1,0 +1,53 @@
+main .aboutMe {
+
+    text-align: center;
+    border-radius: 3%;
+    margin: 30px auto auto;
+    max-width: 1200px;
+}
+
+main .aboutMe .containerTextAboutMe .titleAboutMe {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+}
+
+main .aboutMe .containerTextAboutMe .paragraphAboutMe {
+    color: #999999;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+main .aboutMe .containerTextAboutMe .paragraphAboutMe2 a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+.paragraphAboutMe2 {
+    color: #999999;
+    font-weight: 600;
+    margin: auto;
+    text-align: center;
+    border: double #15a4fa;
+    padding: 8px;
+    background: aliceblue;
+    max-width: 140px;
+    min-width: 140px;
+    border-radius: 5%;
+}
+
+.paragraphAboutMe2:hover {
+    background: #15a4fa;
+    color: #fff;
+    cursor: pointer;
+}
+
+.containerTitleAboutMe {
+    border: double #15a4fa;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 3%;
+    margin: 30px auto auto;
+    background-repeat: no-repeat;
+}

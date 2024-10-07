@@ -1,0 +1,1110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------------BARRA LATERAL DE NAVEGACION---------- */
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    /*font-size: 16px;*/
+    background: #fff;
+}
+
+.height100{
+    height: 100vh;
+}
+
+html,body{
+    margin:0;
+    height:100%;
+}
+
+.containerMainNav {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.containerAboutMe {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.containerIcon {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    overflow: visible;
+}
+.containerPortFolio {
+    width: 75%;
+    max-width: 75%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.containerFooter {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.navRight20{
+    right: 20%;
+    transition: all 0.5s;
+}
+
+.navRight0{
+    right: 0;
+    transition: all 0.5s;
+}
+
+.colorMainScroll {
+    background-color: black;
+    opacity: 0.6;
+    color:white;
+    transition: all 2s ease;
+    border-radius: 10%;
+}
+
+header .mainNav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    position: fixed;
+    z-index: 9999999;
+}
+
+header .mainNav a {
+    display: inline-block;
+    padding: 15px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .mainNav a:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+header .mainNav a:hover {
+    text-decoration: none;
+}
+
+header .containerTextHeader {
+    padding: 200px 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header .containerTextHeader .titleHeader {
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+header .containerTextHeader .titleHeader:hover {
+    color: #15a4fa;
+}
+
+header .containerTextHeader .line {
+    width: 90%;
+    margin: auto;
+    height: 3px;
+    background: #15a4fa;
+    margin-bottom: 20px;
+}
+header .containerTextHeader .line:hover {
+    background: #fff;
+}
+
+header .containerTextHeader .subtitleHeader {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+header .containerTextHeader .subtitleHeader:hover {
+    color: #15a4fa;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5) rotateX(360deg);
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+}
+
+header .containerTextHeader .socialButtons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: #15a4fa 0px 0px 1px 4px;
+    background: #2E2E2E;
+}
+
+header .containerTextHeader .linkedin, .github, .facebook, .instagram {
+    display: inline-block;
+    padding: 15px 15px;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+}
+
+header .containerTextHeader .linkedin:hover, .github:hover, .facebook:hover, .instagram:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+header .containerTextHeader .socialButtons {
+    margin-top: 13em;
+}
+
+
+/*_______________________________________*/
+
+main .aboutMe {
+
+    text-align: center;
+    border-radius: 3%;
+    margin: auto;
+    margin-top: 30px;
+    max-width: 1200px;
+}
+
+main .aboutMe .containerTextAboutMe .titleAboutMe {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+}
+
+main .aboutMe .containerTextAboutMe .paragraphAboutMe {
+    color: #999999;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+main .aboutMe .containerTextAboutMe .paragraphAboutMe2 a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+main .icons {
+    padding: 30px 0;
+}
+
+.containerIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .icons .icon {
+    margin: 0 1.3020833333333333vw;
+    text-align: center;
+    border: double;
+    border-color: #15a4fa;
+    padding: 8px;
+    background: aliceblue;
+    max-width: 250px;
+    min-width: 250px;
+    border-radius: 10%;
+    opacity: 0.7;
+    margin-bottom: 4.149377593360996vh;
+}
+
+main .icons .containerIcons .icon img {
+    width: 65px;
+    height: 65px;
+}
+
+main .icons .containerIcons .icon h5{
+    margin-bottom: 0.2vh;
+}
+main .icons .containerIcons .icon h5:hover{
+    transform: scale(1.5);
+    transform-style: flat;
+    transition: all 1s linear;
+}
+
+main .portFolio {
+    background: #f0f3f5;
+    height: inherit;
+    padding: 60px 0;
+}
+
+main .containerTextPortFolio {
+    text-align: center;
+}
+
+main .containerTextPortFolio #idContactMe {
+    text-decoration: none;
+}
+
+main .containerTextPortFolio .titlePortFolio {
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+main .containerTextPortFolio .titlePortFolioProyects {
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+main .containerTextPortFolio .paragraphPortFolio {
+    font-weight: normal;
+    color: #999999;
+    margin-bottom: 60px;
+}
+
+main .portFolio .containerTitlePortFolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .portFolio .containerTitlePortFolio img {
+    margin-bottom: 1vh;
+    border-radius: 15px;
+    width: 23em;
+    height: 12em;
+}
+
+main .portFolio .containerTitlePortFolio img:hover {
+    opacity: 0.4;
+}
+
+
+footer {
+    width: 100%;
+    height: 725px;
+    padding: 60px 0;
+    /*background-image: url("../img/.png");*/
+    background-color: currentColor;
+    opacity: 0.5;
+}
+
+footer .footerText {
+    text-align: center;
+    color: #fff;
+}
+
+footer .footerText .titleFooter {
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+footer .footerText .titleParagraphFooter {
+    font-weight: 300;
+    color: #999999;
+    margin-bottom: 45px;
+}
+
+footer .form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+footer .form .nameContact, footer .form .nameEmail, footer .form .message {
+    display: inline-block;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background: none;
+    border: 1px solid #999999;
+    color: #999999;
+    border-radius: 3px;
+    font-family: 'lato';
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer .form .message {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+footer .form .right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .form .bottonSend {
+    display: inline-block;
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    border-radius: 3px;
+}
+
+footer .form .bottonSend:hover {
+    background: #15a4fa;
+    color: #fff;
+    cursor: pointer;
+}
+
+#backgroundVideo {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999999; /* ((Queda por detras del resto)) */
+    opacity: 0.5;
+}
+
+#backgroundVideoAboutMe {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999999; /* ((Queda por detras del resto)) */
+}
+
+.paragraphAboutMe2 {
+    color: #999999;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin: auto;
+    text-align: center;
+    border: double;
+    border-color: #15a4fa;
+    padding: 8px;
+    background: aliceblue;
+    max-width: 140px;
+    min-width: 140px;
+    border-radius: 5%;
+}
+
+.paragraphAboutMe2:hover {
+    background: #15a4fa;
+    color: #fff;
+    cursor: pointer;
+}
+
+.containerTitleAboutMe {
+    border: double;
+    border-color: #15a4fa;
+    /*background: aliceblue;*/
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 3%;
+    margin: auto;
+    margin-top: 30px;
+    /*background-image: url(../img/tct1.jpg);*/
+    background-repeat: no-repeat;
+}
+
+.cartaBox {
+    position: relative;
+    perspective: 1000px;
+
+}
+
+.cartaBox:hover .carta {
+    transform: rotateY(180deg);
+}
+
+.carta {
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+}
+
+.cara {
+    backface-visibility: hidden;
+}
+
+.cara.detras {
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1437px) and (min-width: 1117px) {
+    .height100{
+        height: auto;
+    }
+    .containerIcon{
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 1437px) and (min-width: 1039px){
+    .height100{
+        height: auto;
+    }
+    .containerIcon{
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 1039px) {
+    .height100{
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    header .mainNav a{
+        font-size: 10px;
+    }
+    header .containerTextHeader .titleHeader {
+        font-size: 42px;
+    }
+    header .containerTextHeader {
+        padding: 130px 0 0 0;
+    }
+    header .containerTextHeader .line {
+        width: 65%;
+        height: 1px;
+    }
+    header .containerTextHeader .subtitleHeader {
+        font-size: 18px;
+    }
+    header .containerTextHeader .socialButtons {
+        margin-top: 7em;
+        /*display: flex;*/
+    }
+    .containerTitleAboutMe {
+        max-width: 80%;
+        max-height: 30vh;
+        padding: 6px 0;
+    }
+    main .aboutMe .containerTextAboutMe .titleAboutMe {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    main .aboutMe .containerTextAboutMe .paragraphAboutMe {
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+    main .aboutMe .containerTextAboutMe .paragraphAboutMe2 {
+        padding: 4px;
+        font-size: 10px;
+        width: 40%;
+        min-width: 0;
+    }
+    .cara h2{
+        font-size: 12px;
+    }
+    main .icons .containerIcons .icon img {
+        width: 50px;
+        height: 50px;
+        margin-top: 2vh;
+    }
+    .carta {
+        transform-style: unset;
+        transition: none;
+    }
+    .cara.detras {
+        transform: rotateY(0deg);
+    }
+    .cara {
+        backface-visibility: unset;
+    }
+    .cartaBox:hover .carta {
+        transform: rotateY(0deg);
+    }
+    br {
+        display: none;
+    }
+
+    main .icons .icon {
+        max-width: 110px;
+        min-width: 110px;
+        max-height: fit-content;
+    }
+    main .icons .icon h5 {
+        display: none;
+    }
+    main .icons .icon .detras img {
+        display: none;
+    }
+    main .containerTextPortFolio .titlePortFolioProyects {
+        margin-bottom: 7px;
+        font-size: 28px;
+    }
+    main .containerTextPortFolio .titlePortFolio {
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+    main .containerTextPortFolio .paragraphPortFolio {
+        margin-bottom: 14px;
+        font-size: 12px;
+    }
+    main .portFolio {
+        padding: 40px 0;
+    }
+    footer .footerText .titleParagraphFooter {
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    footer .form .nameContact, footer .form .nameEmail, footer .form .message {
+        padding: 5px 10px;
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+    footer .footerText .titleFooter {
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+    footer {
+        height: fit-content;
+        padding: 30px 0;
+    }
+    footer .form .message {
+        min-height: 100px;
+        max-height: 100px;
+    }
+    footer .form .bottonSend {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    main .portFolio {
+        overflow: visible;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+    header .mainNav a{
+        font-size: 10px;
+    }
+    header .containerTextHeader .titleHeader {
+        font-size: 42px;
+    }
+    header .containerTextHeader {
+        padding: 270px 0 0 0;
+    }
+    header .containerTextHeader .line {
+        width: 65%;
+        height: 1px;
+    }
+    header .containerTextHeader .subtitleHeader {
+        font-size: 18px;
+    }
+    header .containerTextHeader .socialButtons {
+        margin-top: 13em;
+        /*display: flex;*/
+    }
+    .containerTitleAboutMe {
+        max-width: 80%;
+        max-height: 30vh;
+        padding: 6px 0;
+    }
+    main .aboutMe .containerTextAboutMe .titleAboutMe {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    main .aboutMe .containerTextAboutMe .paragraphAboutMe {
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+    main .aboutMe .containerTextAboutMe .paragraphAboutMe2 {
+        padding: 4px;
+        font-size: 10px;
+        width: 40%;
+        min-width: 0;
+    }
+    .cara h2{
+        font-size: 12px;
+    }
+    main .icons .containerIcons .icon img {
+        width: 50px;
+        height: 50px;
+        margin-top: 2vh;
+    }
+    .carta {
+        transform-style: unset;
+        transition: none;
+    }
+    .cara.detras {
+        transform: rotateY(0deg);
+    }
+    .cara {
+        backface-visibility: unset;
+    }
+    .cartaBox:hover .carta {
+        transform: rotateY(0deg);
+    }
+    br {
+        display: none;
+    }
+
+    main .icons .icon {
+        max-width: 110px;
+        min-width: 110px;
+        max-height: fit-content;
+    }
+    main .icons .icon h5 {
+        display: none;
+    }
+    main .icons .icon .detras img {
+        display: none;
+    }
+    main .containerTextPortFolio .titlePortFolioProyects {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+    main .containerTextPortFolio .titlePortFolio {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    main .containerTextPortFolio .paragraphPortFolio {
+        margin-bottom: 14px;
+        font-size: 12px;
+    }
+    main .portFolio {
+        padding: 40px 0;
+    }
+    footer .footerText .titleParagraphFooter {
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    footer .form .nameContact, footer .form .nameEmail, footer .form .message {
+        padding: 5px 10px;
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+    footer .footerText .titleFooter {
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+    footer {
+        height: fit-content;
+        padding: 30px 0;
+    }
+    footer .form .message {
+        min-height: 100px;
+        max-height: 100px;
+    }
+    footer .form .bottonSend {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    main .aboutMe {
+        padding: 10px;
+    }
+    main .portFolio .containerTitlePortFolio img {
+        margin-bottom: 2vh;
+        width: 8em;
+        height: 7em;
+    }
+
+    .containerPortFolio {
+        width: 75%;
+        max-width: 75%;
+        margin: auto;
+        overflow: visible;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .containerTextPortFolio {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    header .mainNav a{
+        font-size: 10px;
+    }
+    header .containerTextHeader .titleHeader {
+        font-size: 42px;
+    }
+    header .containerTextHeader {
+        padding: 270px 0 0 0;
+    }
+    header .containerTextHeader .line {
+        width: 65%;
+        height: 1px;
+    }
+    header .containerTextHeader .subtitleHeader {
+        font-size: 18px;
+    }
+    header .containerTextHeader .socialButtons {
+        margin-top: 13em;
+        /*display: flex;*/
+    }
+    .containerTitleAboutMe {
+        max-width: 80%;
+        max-height: 30vh;
+        padding: 6px 0;
+    }
+    main .aboutMe .containerTextAboutMe .titleAboutMe {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    main .aboutMe .containerTextAboutMe .paragraphAboutMe {
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+    main .aboutMe .containerTextAboutMe .paragraphAboutMe2 {
+        padding: 4px;
+        font-size: 10px;
+        width: 40%;
+        min-width: 0;
+    }
+    .cara h2{
+        font-size: 12px;
+    }
+    main .icons .containerIcons .icon img {
+        width: 50px;
+        height: 50px;
+        margin-top: 2vh;
+    }
+    .carta {
+        transform-style: unset;
+        transition: none;
+    }
+    .cara.detras {
+        transform: rotateY(0deg);
+    }
+    .cara {
+        backface-visibility: unset;
+    }
+    .cartaBox:hover .carta {
+        transform: rotateY(0deg);
+    }
+    br {
+        display: none;
+    }
+
+    main .icons .icon {
+        max-width: 110px;
+        min-width: 110px;
+        max-height: fit-content;
+    }
+    main .icons .icon h5 {
+        display: none;
+    }
+    main .icons .icon .detras img {
+        display: none;
+    }
+    main .containerTextPortFolio .titlePortFolioProyects {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+    main .containerTextPortFolio .titlePortFolio {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    main .containerTextPortFolio .paragraphPortFolio {
+        margin-bottom: 14px;
+        font-size: 12px;
+    }
+    main .portFolio {
+        padding: 40px 0;
+    }
+    footer .footerText .titleParagraphFooter {
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    footer .form .nameContact, footer .form .nameEmail, footer .form .message {
+        padding: 5px 10px;
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+    footer .footerText .titleFooter {
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+    footer {
+        height: fit-content;
+        padding: 30px 0;
+    }
+    footer .form .message {
+        min-height: 100px;
+        max-height: 100px;
+    }
+    footer .form .bottonSend {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    main .aboutMe {
+        padding: 10px;
+    }
+    main .portFolio .containerTitlePortFolio img {
+        margin-bottom: 2vh;
+        width: 8em;
+        height: 7em;
+    }
+
+    .containerPortFolio {
+        width: 75%;
+        max-width: 75%;
+        margin: auto;
+        overflow: visible;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .containerTextPortFolio {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 385px)and (min-width: 377px){
+    header .containerTextHeader{
+        padding: 215px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 361px)and (min-width: 321px){
+    header .containerTextHeader{
+        padding: 200px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 601px)and (min-width: 416px){
+    header .containerTextHeader .line {
+        width: 60%;
+    }
+    main .icons .icon {
+        max-width: 150px;
+        min-width: 150px;
+        max-height: initial;
+    }
+    main .portFolio .containerTitlePortFolio img {
+        margin-bottom: 2vh;
+        width: 8em;
+        height: 7em;
+    }
+    .containerPortFolio {
+        overflow: visible;
+    }
+}
+
+@media screen and (max-width: 1025px)and (min-width: 602px){
+    main .portFolio .containerTitlePortFolio img {
+        margin-bottom: 2vh;
+    }
+    .containerPortFolio {
+        overflow: visible;
+    }
+    main .portFolio {
+        height: auto;
+    }
+    header .containerTextHeader{
+        padding: 450px 0 0 0;
+    }
+    header .mainNav a {
+        font-size: 25px;
+    }
+    header .containerTextHeader .socialButtons img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 812px)and (min-width: 300px){
+    header .mainNav a{
+        font-size: 11px;
+    }
+    header .containerTextHeader .titleHeader {
+        font-size: 42px;
+    }
+    header .containerTextHeader {
+        padding: 210px 0 0 0;
+    }
+    header .containerTextHeader .line {
+        width: 65%;
+        height: 1px;
+    }
+    header .containerTextHeader .subtitleHeader {
+        font-size: 18px;
+    }
+    header .containerTextHeader .socialButtons {
+        margin-top: 13em;
+        /*display: flex;*/
+    }
+    .containerTitleAboutMe {
+        max-width: 80%;
+        max-height: 30vh;
+        padding: 6px 0;
+    }
+    main .aboutMe .containerTextAboutMe .titleAboutMe {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    main .aboutMe .containerTextAboutMe .paragraphAboutMe {
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+    main .aboutMe .containerTextAboutMe .paragraphAboutMe2 {
+        padding: 4px;
+        font-size: 10px;
+        width: 40%;
+        min-width: 0;
+    }
+    .cara h2{
+        font-size: 12px;
+    }
+    main .icons .containerIcons .icon img {
+        width: 50px;
+        height: 50px;
+        margin-top: 2vh;
+    }
+    .carta {
+        transform-style: unset;
+        transition: none;
+    }
+    .cara.detras {
+        transform: rotateY(0deg);
+    }
+    .cara {
+        backface-visibility: unset;
+    }
+    .cartaBox:hover .carta {
+        transform: rotateY(0deg);
+    }
+    br {
+        display: none;
+    }
+
+    main .icons .icon {
+        max-width: 110px;
+        min-width: 110px;
+        max-height: fit-content;
+    }
+    main .icons .icon h5 {
+        display: none;
+    }
+    main .icons .icon .detras img {
+        display: none;
+    }
+    main .containerTextPortFolio .titlePortFolioProyects {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+    main .containerTextPortFolio .titlePortFolio {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    main .containerTextPortFolio .paragraphPortFolio {
+        margin-bottom: 14px;
+        font-size: 12px;
+    }
+    main .portFolio {
+        padding: 40px 0;
+        height: inherit;
+    }
+    footer .footerText .titleParagraphFooter {
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    footer .form .nameContact, footer .form .nameEmail, footer .form .message {
+        padding: 5px 10px;
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+    footer .footerText .titleFooter {
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+    footer {
+        height: fit-content;
+        padding: 30px 0;
+    }
+    footer .form .message {
+        min-height: 100px;
+        max-height: 100px;
+    }
+    footer .form .bottonSend {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    main .aboutMe {
+        padding: 10px;
+    }
+    main .portFolio .containerTitlePortFolio img {
+        margin-bottom: 2vh;
+        width: 8em;
+        height: 7em;
+    }
+
+    .containerPortFolio {
+        width: 75%;
+        max-width: 75%;
+        margin: auto;
+        overflow: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .containerTextPortFolio {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+    main .portFolio .containerTitlePortFolio img {
+        margin-bottom: 2vh;
+        width: 8em;
+        height: 7em;
+    }
+    main .containerTextPortFolio {
+        margin-bottom: 30px;
+    }
+    main .containerTextPortFolio .paragraphPortFolio {
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    header .containerTextHeader .socialButtons img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 601px){
+    body .backgroundVideo{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .aboutMe video {
+        display: none;
+    }
+    body .backgroundVideo{
+        z-index: -999999;
+        position: fixed;
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/Fondos/fondo-abstracto-negro-vector_1340-8573.jpg") ;
+        /*background-color: mediumaquamarine;*/
+    }
+    main .respons{
+        height: auto;
+    }
+}

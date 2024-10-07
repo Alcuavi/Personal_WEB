@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ name }} - Curriculum</title>
+    <link rel="stylesheet" href="{{ absolute_url(asset('css/curriculum.css')) }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+{% block body %}
+    <div class="container">
+        <!--
+        <video id="backgroundVideoAboutMe" muted autoplay preload="auto" loop src="{{ asset('video/506401051_1%20(1).mp4') }}"></video>
+        <video id="backgroundVideo" muted autoplay preload loop src="{{ asset('video/170307_Particles_17_1080p.mp4') }}"></video>
+
+        <div class="generate-pdf">
+            <a id="generate-pdf-btn" class="btn-download" href="pdf/ALBERTO_CUADRADO_(Full_Stack_Developer).pdf" download="ALBERTO_CUADRADO_(Full_Stack_Developer).pdf">Descargar PDF</a>
+        </div>
+-->
+        <ul class="language-switcher">
+            <li>
+                <a href="{{ path(app.request.attributes.get('_route'), app.request.query.all | merge({'_locale': 'es'})) }}">
+                    <img src="https://flagcdn.com/es.svg" alt="Español" class="flag-icon"> {{ 'Español'|trans }}
+                </a>
+            </li>
+            <li><a href="{{ path(app.request.attributes.get('_route'), app.request.query.all | merge({'_locale': 'en'})) }}">
+                    <img src="https://flagcdn.com/gb.svg" alt="Español" class="flag-icon">{{ 'Inglés'|trans }}
+                </a>
+            </li>
+        </ul>
+        <div class="row">
+            <!-- Columna Izquierda: Información Personal, Contacto, Idiomas, etc. -->
+            <div class="column left">
+                <img src="{{ asset('img/alberto-cuadrado.jpg') }}" alt="{{ name }}" class="profile-image">
+
+                <div class="personal-info">
+                    <h2>{{ name }}</h2>
+                    <h3>{{ position }}</h3>
+                    <p><strong>{{ 'Fecha de Nacimiento'|trans }}:</strong> {{ dob }}</p>
+                    <p><strong>{{ 'Experiencia'|trans }}:</strong> Mid-Senior</p>
+                    <p><strong>{{ 'Ubicación'|trans }}:</strong> {{ location }}</p>
+
+                    <div class="contact-info">
+                        <h3>{{ 'Contacto'|trans }}</h3>
+                        <p class="social-links">
+                            <a href="tel:{{ contact.phone }}" target="_blank"><i class="fas fa-phone"></i></a>
+                            <a href="mailto:{{ contact.email }}" target="_blank"><i class="fas fa-envelope"></i></a>
+                            <a href="{{ contact.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="{{ contact.github }}" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="{{ contact.website }}" target="_blank"><i class="fas fa-globe"></i></a>
+                        </p>
+                        <p></p>
+                        <p></p>
+                    </div>
+
+                    <div class="languages">
+                        <h3>{{ 'Idiomas'|trans }}</h3>
+                        <ul>
+                            {% for language in languages %}
+                                <li>
+                                    <span>{{ language.name }}</span>
+                                    <!--
+                                    <div class="progress-bar" style="width: 100%; height: 10px; background-color: #e0e0e0;">
+                                        <div class="progress" style="width: {{ language.level_percentage }}%; height: 100%; background-color: #3498db;"></div>
+                                    </div>
+                                    -->
+                                    <svg width="100%" height="10">
+                                        <rect class="progress-bar" width="100%" height="100%" fill="#e0e0e0" rx="5" ry="5"></rect>
+                                        <rect class="progress" width="{{ language.level_percentage }}%" height="100%" fill="#3498db" rx="5" ry="5"></rect>
+                                    </svg>
+
+
+
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h3>{{ 'Certificaciones'|trans }}</h3>
+                        <ul>
+                            {% for cert in certifications %}
+                                <li>
+                                    <i class="fas fa-certificate"></i>
+                                    <span>{{ cert }}</span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <!--
+                    <div class="additional-info">
+                        <h3>Otros Datos de Interés</h3>
+                        <p>Disponibilidad para viajar</p>
+                        <p>Carnet de Conducir B y A1</p>
+                        <p>Vehículo propio</p>
+                    </div>
+                    -->
+
+                    <div class="section">
+                        <h3>{{ 'Habilidades Personales'|trans }}</h3>
+                        <div class="personal-skills">
+                            {% for skill in personal_skills %}
+                                <div class="skill-item">
+                                    <i class="{{ skill.icon }}"></i>
+                                    <span class="skill-name">{{ skill.name }}</span>
+                                    <p class="skill-description hidden" >{{ skill.description }}</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Formación, Experiencia, Competencias -->
+            <div class="column right">
+                <div class="section">
+                    <h3>{{ 'Formación'|trans }}</h3>
+                    <ul class="training-list">
+                        {% for edu in education %}
+                            <li class="training-item">
+                                <strong class="training-title">{{ edu.degree }}</strong> <br>
+                                <small>{{ edu.institution }}</small>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>{{ 'Experiencia Laboral'|trans }}</h3>
+                    <ul class="experience-list">
+                        {% for job in experience %}
+                            <li class="experience-item">
+                                <strong class="experience-title">
+                                    <i class="fas fa-chevron-right"></i> {{ job.company }}</strong> - {{ job.position }} <br>
+                                <small>{{ job.date }}</small>
+                                <p class="experience-description">{{ job.description|raw }}</p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="technical-skills-wrapper">
+                <div class="technical-skill-section section">
+                    <h3>{{ 'Competencias Técnicas'|trans }}</h3>
+                    <div class="technical-skills-left">
+                        <div class="technical-skill-container">
+                            {% for category, skills in technical_skills %}
+                                    <div class="technical-skill-category">
+                                        <h4>{{ category|trans }}</h4>
+                                        <div class="technical-skills">
+                                            {% for skill in skills %}
+                                                <div class="technical-skill-item">
+                                                    <img src="{{ skill.logo }}" alt="{{ skill.name }} logo" class="tech-logo">
+                                                    <span>{{ skill.name }}</span>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cargar el archivo JavaScript aquí -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        let generatePdfUrl = '/curriculum/generate-pdf-script';
+        console.log("La URL para generar el PDF es: " + generatePdfUrl); // Agrega este console.log para verificar
+    </script>
+
+    <script src="{{ asset('js/curriculum.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+{% endblock %}

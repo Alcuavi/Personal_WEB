@@ -1,0 +1,58 @@
+main .icons {
+    padding: 30px 0;
+}
+
+.containerIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .icons .icon {
+    text-align: center;
+    border: double #15a4fa;
+    padding: 8px;
+    background: aliceblue;
+    max-width: 250px;
+    min-width: 250px;
+    border-radius: 10%;
+    opacity: 0.7;
+    margin: 0 1.3020833333333333vw 4.149377593360996vh;
+}
+
+main .icons .containerIcons .icon img {
+    width: 65px;
+    height: 65px;
+}
+
+main .icons .containerIcons .icon h5{
+    margin-bottom: 0.2vh;
+}
+main .icons .containerIcons .icon h5:hover{
+    transform: scale(1.5);
+    transform-style: flat;
+    transition: all 1s linear;
+}
+
+.cartaBox {
+    position: relative;
+    perspective: 1000px;
+
+}
+
+.cartaBox:hover .carta {
+    transform: rotateY(180deg);
+}
+
+.carta {
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+}
+
+.cara {
+    backface-visibility: hidden;
+}
+
+.cara.detras {
+    transform: rotateY(180deg);
+}

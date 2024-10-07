@@ -1,0 +1,45 @@
+<header class="home">
+    <div class="containerMainNav">
+        <ul class="language-switcher">
+            <li>
+                <a href="{{ path(app.request.attributes.get('_route'), app.request.query.all | merge({'_locale': 'es'})) }}">
+                    <img src="https://flagcdn.com/es.svg" alt="Español" class="flag-icon"> {{ 'Español'|trans }}
+                </a>
+            </li>
+            <li><a href="{{ path(app.request.attributes.get('_route'), app.request.query.all | merge({'_locale': 'en'})) }}">
+                    <img src="https://flagcdn.com/gb.svg" alt="Español" class="flag-icon">{{ 'Inglés'|trans }}
+                </a>
+            </li>
+        </ul>
+        <nav class="mainNav navRight20">
+            <a href="#" id="idHome">{{ 'Inicio'|trans }}</a>
+            <a href="#" id="idAboutMe">{{ 'Competencias'|trans }}</a>
+            <a href="#" id="idProyects">{{ 'Proyectos'|trans }}</a>
+            <a href="#" id="idContact">{{ 'Contacto'|trans }}</a>
+            <!-- Otros elementos de navegación -->
+
+        </nav>
+    </div>
+
+    <div class="containerTextHeader">
+        <div class="containerTextHeader2">
+            <h1 class="titleHeader">{{ name }}</h1>
+            <div class="line"></div>
+            <h2 class="subtitleHeader">{{ position }}</h2>
+            <div class="socialButtons">
+                <a href="{{ contact.linkedin }}" target="_blank" class="linkedin">
+                    <img src="{{ asset('img/Logos/Socials/linkedin.png') }}">
+                </a>
+                <a href="{{ contact.github }}" target="_blank" class="github">
+                    <img src="{{ asset('img/Logos/Socials/Github.png') }}">
+                </a>
+                <a href="https://www.facebook.com/Alcuavi" target="_blank" class="facebook">
+                    <img src="{{ asset('img/Logos/Socials/facebook.png') }}">
+                </a>
+                <a href="https://www.instagram.com/Alcuavil" target="_blank" class="instagram">
+                    <img src="{{ asset('img/Logos/Socials/Instagram.png') }}">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>

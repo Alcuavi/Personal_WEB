@@ -1,0 +1,15 @@
+<div class="containerFooter contact">
+    <div class="footerText">
+        <h2 class="titleFooter"> {{ 'Contáctame'|trans }} </h2>
+        <p class="titleParagraphFooter">{{ 'Evoluciona, todos necesitamos crecer y mejorar.'|trans }}</p>
+    </div>
+
+    <div id="form-message"></div> <!-- Aquí se mostrará el mensaje de éxito o error -->
+
+    <div class="contact-section">
+        {{ render(controller('App\\Controller\\ContactController::contactForm')) }}
+    </div>
+
+</div>
+
+

@@ -1,0 +1,47 @@
+main .portFolio {
+    background: #f0f3f5;
+    height: inherit;
+    padding: 60px 0;
+}
+
+main .containerTextPortFolio {
+    text-align: center;
+}
+
+main .containerTextPortFolio #idContactMe {
+    text-decoration: none;
+}
+
+main .containerTextPortFolio .titlePortFolio {
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+main .containerTextPortFolio .titlePortFolioProyects {
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+main .containerTextPortFolio .paragraphPortFolio {
+    font-weight: normal;
+    color: #999999;
+    margin-bottom: 60px;
+}
+
+main .portFolio .containerTitlePortFolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .portFolio .containerTitlePortFolio img {
+    margin-bottom: 1vh;
+    border-radius: 15px;
+    width: 23em;
+    height: 12em;
+}
+
+main .portFolio .containerTitlePortFolio img:hover {
+    opacity: 0.4;
+}

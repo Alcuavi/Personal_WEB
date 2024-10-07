@@ -1,0 +1,9 @@
+nelmio_cors:
+    defaults:
+        allow_credentials: false
+        allow_origin: [ '*' ]
+        allow_headers: [ 'content-type' ]
+        allow_methods: [ 'GET', 'OPTIONS' ]
+        max_age: 3600
+    paths:
+        '^/': null

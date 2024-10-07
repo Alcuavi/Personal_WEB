@@ -1,0 +1,24 @@
+{% block body %}
+    <div class="height100">
+        <section class="portFolio proyects">
+            <div class="containerPortFolio">
+                <div class="containerTextPortFolio">
+                    <h1 class="titlePortFolioProyects"> {{ 'PROYECTOS'|trans}} </h1>
+                    <h2 class="titlePortFolio"> {{ 'Haz de tu trabajo algo extraordinario'|trans }}</h2>
+                    <a href="mailto:Alberto.cuvi@gmail.com" id="idContactMe">
+                        <p class="paragraphPortFolio"> {{ 'Contáctame si estás preparado'|trans }}</p>
+                    </a>
+                </div>
+
+                <div class="containerTitlePortFolio">
+                    <img src="{{ asset('img/Proojects/CarlaSerranoWeb.PNG') }}" alt="">
+                    <img src="{{ asset('img/Proojects/FlippeoBox.PNG') }}" alt="">
+                    <img src="{{ asset('img/Proojects/AppViajesProject.PNG') }}" alt="">
+                    <img src="{{ asset('img/Proojects/AppReproductorProject.PNG') }}" alt="">
+                    <img src="{{ asset('img/Proojects/InmoNostrumProject.PNG') }}" alt="">
+                    <img src="{{ asset('img/Proojects/SpaceFilmProject.PNG') }}" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% block body %}
+    <div class="height100 respons">
+        <section class="icons">
+            <div class="containerIcon">
+                <div class="containerIcons">
+                    {% for category, skills in technical_skills %}
+                        <div class="icon">
+                            <div class="cartaBox">
+                                <div class="carta">
+                                    <div class="cara">
+                                        <h2>{{ category | trans | upper }}</h2>
+                                    </div>
+                                    <div class="cara detras">
+                                        <img src="{{ asset('img/default.png') }}" alt="image{{ category | replace({' ': ''}) }}"> <!-- Cambia esto si tienes imágenes específicas -->
+                                    </div>
+                                </div>
+                            </div>
+                            {% for skill in skills %}
+                                <h5>{{ skill.name | trans | upper }}</h5>
+                            {% endfor %}
+                            <br>
+                            <img src="{{ skills|first.logo }}" id="image{{ category | replace({' ': ''}) }}" alt=""> <!-- Muestra la primera imagen -->
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

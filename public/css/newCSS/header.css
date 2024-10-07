@@ -1,0 +1,92 @@
+header .mainNav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    position: fixed;
+    z-index: 9999999;
+}
+
+header .mainNav a {
+    display: inline-block;
+    padding: 15px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .mainNav a:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+header .mainNav a:hover {
+    text-decoration: none;
+}
+
+header .containerTextHeader {
+    padding: 200px 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header .containerTextHeader .titleHeader {
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+header .containerTextHeader .titleHeader:hover {
+    color: #15a4fa;
+}
+
+header .containerTextHeader .line {
+    width: 90%;
+    height: 3px;
+    background: #15a4fa;
+    margin: auto auto 20px;
+}
+header .containerTextHeader .line:hover {
+    background: #fff;
+}
+
+header .containerTextHeader .subtitleHeader {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+header .containerTextHeader .subtitleHeader:hover {
+    color: #15a4fa;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5) rotateX(360deg);
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+}
+
+header .containerTextHeader .socialButtons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: #15a4fa 0 0 1px 4px;
+    background: #2E2E2E;
+}
+
+header .containerTextHeader .linkedin, .github, .facebook, .instagram {
+    display: inline-block;
+    padding: 15px 15px;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+}
+
+header .containerTextHeader .linkedin:hover, .github:hover, .facebook:hover, .instagram:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+header .containerTextHeader .socialButtons {
+    margin-top: 13em;
+}
