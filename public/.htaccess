@@ -1,5 +1,16 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ index.php [QSA,L]
+# Use the front controller as index file. It serves as a fallback solution when every other rewrite/redirect fails (e.g. in an SPA).
+DirectoryIndex index.php
+
+# Redirect Trailing Slashes...
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Set the default cache control if none is defined
+<IfModule mod_headers.c>
+    Header set Cache-Control "max-age=3600, public"
 </IfModule>
+
+# Pass the PHP scripts to FastCGI
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
