@@ -24,14 +24,14 @@ class WebController extends AbstractController
         $this->curriculumService = $curriculumService;
     }
 
-    #[Route('/', name: 'redirect_to_locale')]
+    #[Route('/', name: 'redirect_to_locale', methods: ['GET'])]
     public function redirectToLocale(): RedirectResponse
     {
         // Redirigir al idioma predeterminado, por ejemplo 'es'
         return $this->redirectToRoute('home_page', ['_locale' => 'es']);
     }
 
-    #[Route('/{_locale}/', name: 'home_page', requirements: ['_locale' => 'en|es'])]
+    #[Route('/{_locale}/', name: 'home_page', requirements: ['_locale' => 'en|es'], methods: ['GET'])]
     public function home(): Response
     {
         $data = $this->curriculumService->getCurriculumData(); // Llamada al servicio

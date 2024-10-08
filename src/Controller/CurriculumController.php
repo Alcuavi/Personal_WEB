@@ -20,7 +20,7 @@ class CurriculumController extends AbstractController
         $this->curriculumService = $curriculumService;
     }
 
-    #[Route('/{_locale}/curriculum', name: 'curriculum', requirements: ['_locale' => 'en|es'])]
+    #[Route('/{_locale}/curriculum', name: 'curriculum', requirements: ['_locale' => 'en|es'], methods: ['GET'])]
     public function index(): Response
     {
         $data = $this->curriculumService->getCurriculumData(); // Llamada al servicio
@@ -40,9 +40,7 @@ class CurriculumController extends AbstractController
         return $dataFunction($translator);
     }
 
-    /**
-     * @Route("/curriculum/generate-pdf-script", name="generate_pdf_script")
-     */
+    #[Route('/curriculum/generate-pdf-script', name: 'generate_pdf_script', methods: ['POST'])]
     public function generatePdfScript(): JsonResponse
     {
         $process = new Process(['node', '/js/generate_pdf.js']);
@@ -57,9 +55,7 @@ class CurriculumController extends AbstractController
         return new JsonResponse(['status' => 'PDF generated successfully']);
     }
 
-    /**
-     * @Route("/api/get-technical-skills", name="get_technical_skills", methods={"GET"})
-     */
+    #[Route('/api/get-technical-skills', name: 'get_technical_skills', methods: ['GET'])]
     public function getTechnicalSkills(): JsonResponse
     {
         $technicalSkills = $this->getCurriculumData()['technical_skills']; // Ajusta según tu lógica
