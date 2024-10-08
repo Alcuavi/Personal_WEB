@@ -11,33 +11,17 @@ if (!is_dir(dirname(__DIR__).'/vendor')) {
     throw new LogicException('Dependencies are missing. Try running "composer install".');
 }
 
+// Verificar si Symfony Runtime está instalado
 if (!is_file(dirname(__DIR__).'/vendor/autoload_runtime.php')) {
     throw new LogicException('Symfony Runtime is missing. Try running "composer require symfony/runtime".');
 }
 
-// Verifica si la variable APP_ENV está configurada
-if (!isset($_SERVER['APP_ENV'])) {
-    // En el entorno de producción (Heroku) no existe el archivo .env, por lo que se omite esta carga.
-    if (file_exists(dirname(__DIR__).'/.env')) {
-        (new Dotenv())->bootEnv(dirname(__DIR__).'/.env');
-    } else {
-        $_SERVER['APP_ENV'] = 'prod'; // Define como producción si no hay un archivo .env
-    }
+// Cargar variables de entorno si no están configuradas por Heroku u otro proveedor
+if (!isset($_SERVER['APP_ENV']) && file_exists(dirname(__DIR__).'/.env')) {
+    (new Dotenv())->bootEnv(dirname(__DIR__).'/.env');
 }
 
-if (class_exists(Dotenv::class) && file_exists(__DIR__.'/../.env')) {
-    (new Dotenv())->bootEnv(__DIR__.'/../.env');
-}
+$kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
+$application = new Application($kernel);
 
-// Solo intenta cargar el archivo .env si existe
-if (class_exists(Dotenv::class) && file_exists(__DIR__ . '/../.env')) {
-    (new Dotenv())->bootEnv(__DIR__ . '/../.env');
-}
-
-require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
-
-return function (array $context) {
-    $kernel = new Kernel($context['APP_ENV'], (bool) $context['APP_DEBUG']);
-
-    return new Application($kernel);
-};
+$application->run();
